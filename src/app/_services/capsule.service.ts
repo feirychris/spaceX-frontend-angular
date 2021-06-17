@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
-const API_URL = 'https://docs.spacexdata.com/#bc65ba60-decf-4289-bb04-4ca9df01b9c1'
+const API_URL = 'https://api.spacexdata.com/v3/capsules'
 
 @Injectable({
     providedIn: 'root'
