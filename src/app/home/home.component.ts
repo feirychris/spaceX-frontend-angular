@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { CapsuleService } from '../_services/capsule.service';
+import { LaunchesService } from '../_services/launches.services';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +10,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private capsuleService: CapsuleService,
+    private launchesService: LaunchesService,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+  }
+
+
+  goToCapsule(){
+    this.router.navigate(['/capsule']);
+  }
+
+  goToLaunches(){
+    this.router.navigate(['/launches'])
   }
 
 }
