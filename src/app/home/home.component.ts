@@ -16,5 +16,9 @@ export class HomeComponent implements OnInit {
   goToCapsules(){
     this.router.navigate(['capsules']);
   }
+  
+  goToLaunches(){
+    this.router.navigate(['launches']);
+  }
 
 }
