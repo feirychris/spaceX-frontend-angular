@@ -13,18 +13,8 @@ const API_URL = 'https://api.spacexdata.com/v3/capsules'
   
   
     getCapsuleSerial(): Observable<any> {
-      return this.http.get(API_URL + '/capsule_serial');
+      return this.http.get(API_URL);
     }
   
-    getCapsuleId(): Observable<any> {
-        return this.http.get(API_URL + '/capsule_id');
-    }
-
-    getStatus(): Observable<any> {
-        return this.http.get(API_URL + '/status');
-    }
     
-    getMission(): Observable<any> {
-        return this.http.get(API_URL + '/mission');
-    }
   }

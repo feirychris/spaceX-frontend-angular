@@ -1,1 +1,36 @@
-<p>capsule works!</p>
+
+<!-- <table *ngFor="let capsule of capsules">
+<p>{{ capsule.status }}</p>
+<p>{{ capsule.capsule_id }}</p>
+ </table> -->
+
+
+ <table *ngFor="let capsule of capsules" class="table table-dark table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Capsule Serial</th>
+        <th scope="col">Capsule Id</th>
+        <th scope="col">Status</th>
+        <th scope="col">Mission</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">{{ capsule.capsule_serial }}</th>
+        <td>{{ capsule.capsule_id }}</td>
+        <td>{{ capsule.status }}</td>
+        <td>{{ capsule.mission }}</td>
+      </tr>
+      <!-- <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr> -->
+    </tbody>
+  </table>
