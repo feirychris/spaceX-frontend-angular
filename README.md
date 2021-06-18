@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 This is small application that aims at displaying SpaceX launches and capsules in table format.
 
-The API is from the SpaceX [enter link description here](https://docs.spacexdata.com/) website. The requests can be tested via Postman.
+The API is from the [SpaceX](https://docs.spacexdata.com/) website. The requests can be tested via Postman.
 
 ------------------------------------------------------------------------------------------------
 
